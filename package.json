@@ -1,0 +1,31 @@
+{
+  "name": "multithread_nodejs_ts",
+  "version": "1.0.0",
+  "description": "Example project using worker_threads in Node.js with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "dev:singleThread": "nodemon --watch src --delay 1000ms --exec ts-node src/server_single_thread.ts",
+    "dev:multiThread": "nodemon --watch src --delay 1000ms --exec ts-node src/server_multi_thread.ts",
+    "build": "tsc",
+    "start": "node dist/server_multi_thread.js"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "worker_threads",
+    "multithreading",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
